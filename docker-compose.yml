@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  my-app-prod:
+    container_name: vue-dashboard-app-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
